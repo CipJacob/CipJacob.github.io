@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zahtjev za predujam</title>
+  </head>
+  <style>
+    body {
+      margin: 2cm;
+      padding: 0;
+    }
+    .a4.page {
+      width: 210mm;
+      height: 297mm;
+      margin-left: 31.7mm;
+      margin-right: 31.7mm;
+      margin-top: 254mm;
+      margin-bottom: 254mm;
+      background-color: white;
+      /* overflow: hidden; */
+    }
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 180px;
+    }
+    .image-container img {
+      height: 40px;
+    }
+    .h2 {
+      text-align: center;
+    }
+    .prva-u-redu {
+      margin-left: 1px;
+    }
+    .druga-u-redu {
+      margin-left: 80px;
+    }
+    .treca-u-redu {
+      margin-left: 220px;
+    }
+    .prvi-box {
+      border: 1px solid;
+      padding: 1px;
+      width: 140px;
+      height: 18px;
+      color: black;
+      display: inline-block;
+      margin-left: 1px;
+    }
+    .drugi-box {
+      border: 1px solid;
+      padding: 1px;
+      width: 35px;
+      height: 18px;
+      color: black;
+      display: inline-block;
+      margin-left: 1px;
+    }
+    .treci-box {
+      border: 1px solid;
+      padding: 1px;
+      width: 120px;
+      height: 18px;
+      color: black;
+      display: inline-block;
+      margin-left: 230px;
+    }
+    .cetvrti-box {
+      border: 1px solid;
+      padding: 1px;
+      width: 420px;
+      height: 26px;
+      color: black;
+      background-color: lightgrey;
+      display: inline-block;
+    }
+    .label {
+      margin-left: 70px;
+    }
+    .label1 {
+      margin-left: 100px;
+    }
+    .peti-box {
+      border: 1px solid;
+      padding: 1px;
+      width: 420px;
+      height: 18px;
+      color: black;
+      background-color: lightgray;
+      display: inline-block;
+    }
+    .label2 {
+      margin-left: 85px;
+    }
+    .sesti-box {
+      border: 1px solid;
+      padding: 1px;
+      width: 420px;
+      height: 26px;
+      color: black;
+      background-color: lightgray;
+      display: inline-block;
+    }
+    .label3 {
+      margin-left: 160px;
+    }
+    .sedmi-box {
+      border: 1px solid;
+      padding: 1px;
+      width: 420px;
+      height: 26px;
+      color: black;
+      background-color: lightgray;
+      display: inline-block;
+    }
+    .label4 {
+      margin-left: 67px;
+    }
+    .osmi-box {
+      border-top: 1px solid;
+      border-right: 1px solid;
+      border-left: 1px solid;
+      border-bottom: none;
+      padding: 1px;
+      width: 140px;
+      height: 26px;
+      color: black;
+      background-color: lightgray;
+      display: inline-block;
+          }
+
+    .custom-margin {
+      margin-left: 49px;
+    }
+    .deveti-box{  
+      border-top: none;
+      border-left: 1px solid;
+      border-right: 1px solid;
+      border-bottom: 1px solid;
+      padding: 1px;
+      width: 140px;
+      height: 26px;
+      color: black;
+      background-color: lightgray;
+      display: inline-block;
+    }
+    .grid{
+      display: grid;
+      /* width: 100%; */
+      width: 160mm;
+      background-color: white;
+      border: 1px solid;
+      height:150px;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .grid-item{
+      background-color: lightgray;
+      /* grid-column: span 1; */
+      grid-row: span 2;
+      border: 1px solid black;
+      text-align: left;
+
+    }
+    .grid-item1{
+      background-color: lightgray;
+      border: 1px solid black;
+      grid-column: span 3;
+      text-align: center;
+    }
+    .grid-item2{
+      background-color: lightgray;
+      grid-row: span 2;
+      border: 1px solid black;
+      /* text-align: left; */
+    }
+    .grid-item3{
+      background-color: grey;
+      border: 1px solid black;
+      /* text-align: left; */
+    }
+    .grid-item4{
+      border: 1px solid black;
+      width: 25mm;
+    }
+    .prvi-potpis{
+      margin-left: 1px;
+    }
+    .drugi-potpis{
+      margin-left: 30px;
+    }
+    .treci-potpis{
+      margin-left: 100px;
+    }
+    .grid2 {
+      display: grid;
+      /* width: 100%; */
+      width: 160mm;
+      background-color: white;
+      /* border: 1px solid; */
+      height:250px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      column-gap: 25px;
+      row-gap: 3px;
+    }
+    .grid-item5{
+      /* background-color: yellow; */
+      border-bottom: 1px solid black;
+    }
+    .grid-item6{
+      text-align: center;
+      /* background-color: blue; */
+      align-items: start;
+    }
+  </style>
+  <body>
+    <div class="a4-page">
+      <div class="image-container">
+        <img src="rsz_hrv_zastava.png" alt="Slika zastave RH" />
+        <img src="eu zastava.png" alt="Slika zastave EU" />
+      </div>
+      <h2 class="h2">ZAHTJEV ZA PLAĆANJE PREDUJMA</h2>
+      <p>
+        <span class="prva-u-redu">(1) Datum</span>
+        <span class="druga-u-redu">(2) Br.</span>
+        <span class="treca-u-redu">(3) Datum ispravka</span>
+      </p>
+      <div>
+        <input class="prvi-box" input type="date"></input>
+        <input class="drugi-box" input type="number"></input>
+        <input class="treci-box" input type="date"></input>
+      </div>
+      <br />
+      <br />
+      <div>
+        <label class="label">(4) Naziv projekta </label>
+        <textarea class="cetvrti-box" input type="text"></textarea>
+      </div>
+      <div>
+        <label class="label1">Šifra projekta</label>
+        <textarea class="peti-box" input type="text"></textarea>
+      </div>
+      <br />
+      <div>
+        <label class="label2">Naziv korisnika</label>
+        <textarea class="sesti-box" input type="text"></textarea>
+      </div>
+      <br />
+      <div>
+        <label class="label3">OIB</label>
+        <input class="sedmi-box" input type="text" pattern="[0-9]{11}" maxlength="11" inputmode="numeric"></input>
+      </div>
+      <br />
+      <div>
+        <label class="label4"
+          >(5) Zatraženi iznos <input class="osmi-box" type="text" />
+          <br />
+          <span class="custom-margin">predujma, HRK/EUR</span>
+          <input class="deveti-box" type="text"/>
+        </label>
+        </div>
+          <br/>
+          <p><b>(6) Pomoćni dokumenti kao jamstvo za predfinanciranje</b> (ukoliko je potrebno prema </br>
+            Ugovoru o dodjeli bespovratnih sredstava)
+          </p>
+        </div>
+        <br/>
+        <div class="grid">   
+          <div class="grid-item">Naziv davatelja jamstva</div>
+          <div class="grid-item1">Dokument o jamstvu</div>
+          <div class="grid-item2">Jamčeni iznos HRK/EUR</div>     
+          <div class="grid-item2">Rok jamstva</div>   
+          <div class="grid-item3">Naziv dokumenta</div>  
+          <div class="grid-item3">Reg. br. dokumenta</div>  
+          <div class="grid-item3">Datum</div>  
+          <input class="grid-item4"></input>
+          <input class="grid-item4"></input>
+          <input class="grid-item4"></input>
+          <input class="grid-item4"></input>
+          <input class="grid-item4"></input>
+          <input class="grid-item4"></input>
+          <input class="grid-item4"></input>
+          <input class="grid-item4"></input>
+          <input class="grid-item4"></input>
+          <input class="grid-item4"></input>
+          <input class="grid-item4"></input>
+          <input class="grid-item4"></input>
+          <input class="grid-item4"></input>
+          <input class="grid-item4"></input>
+          <input class="grid-item4"></input>
+          <input class="grid-item4"></input>
+          <input class="grid-item4"></input>
+          <input class="grid-item4"></input>
+          <input class="grid-item4"></input>
+          <input class="grid-item4"></input>
+          <input class="grid-item4"></input>
+          <input class="grid-item4"></input>
+          <input class="grid-item4"></input>
+          <input class="grid-item4"></input>      
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <div class="grid2">
+          <div class="grid-item5"></div>
+          <div class="grid-item5"></div>
+          <div class="grid-item5"></div>
+          <div class="grid-item6">Funkcija potpisnika (čelnik institucije Korisnika ili drugi pravni zastupnik)</div>
+          <div class="grid-item6">Potpis</div>
+          <div class="grid-item6">Ime</div>
+          <div class="grid-item5"></div>
+          <div class="grid-item5"></div>
+          <div class="grid-item5"></div>
+          <div class="grid-item6">Funkcija potpisnika (glavni financijski službenik institucije Korisnika, ako je primjenjivo)</div>
+          <div class="grid-item6">Potpis</div>
+          <div class="grid-item6">Ime</div>
+        </div>
+      </br>
+      </br>
+      <p><b>Upute za popunjavanje:</b></p>
+      
+      <p>(1) Datum zahtjeva za plaćanje predujma je datum (dan, mjesec, godina) pripreme i
+        potpisivanja dokumenta od strane Korisnika. Prvobitni datum pripreme ne mijenja se čak i
+        ako se zahtjev tijekom provjere prilagođava/mijenja i ponovno podnosi.
+      </p>
+      <p>(2) Identifikacijski broj Zahtjeva za plaćanje predujma je broj redoslijeda Zahtjeva za
+        nadoknadom sredstava koji je dodijelio Korisnik. Zahtjevi za nadoknadom su numerirani u
+        redoslijedu zajedno sa Zahtjevom za plaćanje predujma i Među-zahtjevima za nadoknadom
+        sredstava bez potraživanog troška. Identifikacijski broj se ne mijenja čak i ako se dokument
+        tijekom provjere prilagođava/korigira i ponovno podnosi.
+      </p>
+      <p>(3) Datum ispravka (dan, mjesec i godina) će se primijeniti i popuniti samo ako je Zahtjev
+        za predfinanciranjem korigiran tijekom provjere te je podnesena nova verzija dokumenta.
+        Prvobitni datum i Identifikacijski broj Zahtjeva za plaćanje predujma ostaju nepromijenjeni.
+      </p>
+      <p>(4) Podaci o Korisniku i projektu će se preuzeti iz Ugovora o dodjeli bespovratnih
+        sredstava. Taj se podatak može automatski importirati, ukoliko je funkcionalnost prethodno
+        ispunjenog Zahtjeva za nadoknadu troškova predviđena u MIS-u.
+      </p>
+      <p>(5) Zatraženi iznos projektnog predujma (predfinanciranje) bit će naznačen u HRK/EUR
+        (ovisno o valuti definiranoj na razini Ugovora o dodjeli bespovratnih sredstava). Iznos
+        predfinanciranja ne može premašiti ograničenje postavljeno u Ugovoru o dodjeli bespovratnih
+        sredstava.
+      </p>
+      <p>(6) Ova se tablica primjenjuje tamo gdje Ugovor o dodjeli bespovratnih sredstava uvjetuje
+        podnošenje jamstva za predfinanciranje za predujam projekta. U tom će slučaju biti unesena
+        informacija o dokumentu o jamstvu.
+      </p>
+
+      
+
+
+      
+
+    </div>
+  </body>
+</html>
